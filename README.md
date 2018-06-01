@@ -10,18 +10,20 @@ Resulting of implemented test are displayed right under the page content on grey
 When tests are displayed in green all tests passed.
 
 ## Provided Test:
-1. RSS Feeds 	(test pos 1 - checks if allFeeds variables are defined).
-				(tests pos 2 to 5 - check if each feed in allFeeds has defined url property, and it is not empty)
-				(tests 6 to 9 - check if each feed in allFeeds has defined name property and it is not empty).
+1. RSS Feeds 	
+* (test pos 1 - checks if allFeeds variables are defined).
+* (tests pos 2 to 5 - check if each feed in allFeeds has defined url property, and it is not empty)
+* (tests 6 to 9 - check if each feed in allFeeds has defined name property and it is not empty).
 
-2. The menu		(test 1 - checks if menu element is hidden by default)
-				(test 2 - checks if when menu icon is clicked it changes visibility on click)
+2. The menu	
+* (test 1 - checks if menu element is hidden by default)
+* (test 2 - checks if when menu icon is clicked it changes visibility on click)
 
-3. Initial Entries 		(test 1 - checks when loadFeed function is called and done, there 
-						is at least one .entry element withing .feed container)
+3. Initial Entries 
+* (test 1 - checks when loadFeed function is called and done, there is at least one .entry element withing .feed container)
 
-4. New Feed Selection 	(test 1 - checks when a new feed is loaded by loadFeed function the
-						 content changes)
+4. New Feed Selection 	
+* (test 1 - checks when a new feed is loaded by loadFeed function the content changes)
 
 ## Licence
 No licence
