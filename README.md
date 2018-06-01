@@ -2,7 +2,7 @@
 
 This application is to check if all demanded functionalities are properly executed by code in app.js file.
 
-##Running the application
+## Running the application
 To run the application open index.html file in a browser.
 
 ## Testing
