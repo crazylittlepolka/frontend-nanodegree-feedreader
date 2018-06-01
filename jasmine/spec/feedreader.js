@@ -101,26 +101,22 @@ $(function() {
                 
                 loadFeed(0, function(){
                 entryFeed = $('.feed').html();
-                done()
-               });
+                done();
+                });
 
-
-                        
-            });
-
-
-            it('when new feed is loaded content changes', function() {
-            
-            //call loadFeed function with another feed
+                //call loadFeed function with another feed
                 loadFeed(1, function(){
 
                 //newFeed is assigned a value of that feed
                 newFeed = $('.feed').html();
-                
-               });
+                });
+            });
+
+            it('when new feed is loaded content changes', function(done) {
+
                 //check if newFeed and entryFeed has different values
                 expect(newFeed).not.toEqual(entryFeed);
-                
+                done();
             });
 
     });
