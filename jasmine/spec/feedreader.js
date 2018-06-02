@@ -85,36 +85,33 @@ $(function() {
 
             });
 
-    /* TODO: Write a new test suite named "New Feed Selection" */
-
+    //test suite for New Feed Selection
     describe('New Feed Selection', function() {
             //delare two variables 
             let entryFeed;
             let newFeed;
-            
-        //test spec if with new feed there is new content
 
          //wait after loadFeed asyn function with two arguments is called and done, and feed loaded
          // and assign entryFeed variable value of this feed
             
             beforeEach(function(done){
                 
+                //load the first feed and save it in entryFeed variable
                 loadFeed(0, function(){
-                entryFeed = $('.feed').html();
-                done();
-                });
-
-                //call loadFeed function with another feed
-                loadFeed(1, function(){
-
-                //newFeed is assigned a value of that feed
-                newFeed = $('.feed').html();
+                    entryFeed = $('.feed').html();
+                    
+                    //load the second feed and save it in newFeed variable
+                    loadFeed(1, function(){
+                        newFeed = $('.feed').html();
+                        done(); //when finished exit and run the spec
+                    });
                 });
             });
 
+            //test spec if with new feed there is new content
             it('when new feed is loaded content changes', function(done) {
 
-                //check if newFeed and entryFeed has different values
+                //check if newFeed and entryFeed have different values
                 expect(newFeed).not.toEqual(entryFeed);
                 done();
             });
